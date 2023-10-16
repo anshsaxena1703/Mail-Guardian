@@ -25,27 +25,20 @@
         <div class="container">
             <h1>Enter your email to validate</h1>
             <form action="/submit" method="post">
-                <!-- Text input for username -->
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <br><br>
-            
-                <!-- Password input -->
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <br><br>
-            
-                <!-- Radio buttons for gender -->
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+                <!-- Text input for email -->
+                <input placeholder="Enter your email to validate" type="text" id="username" name="username" required>
                 <br><br>
             
                 <!-- Submit button -->
-                <input type="submit" value="Submit">
-              </form>
+                <input id="submitBtn" class="btn" type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>Your Results</h2>
+            <div id="resultCont">
+                Your results will show here
+            </div>
         </div>
     </main>
     <footer>
